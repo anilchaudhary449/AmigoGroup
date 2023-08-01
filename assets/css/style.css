@@ -269,6 +269,8 @@ img{
 
 /* ===== ABOUT =====*/
 .about__container{
+	background-color: #3956a5;
+	color: #fff;
 	row-gap: 2rem;
 	text-align: center;
 }
@@ -285,6 +287,8 @@ img{
 
 /* ===== SKILLS =====*/
 .skills__container{
+	background-color: #3956a5;
+	color: #fff;
 	row-gap: 2rem;
 	text-align: center;
 }
@@ -308,7 +312,8 @@ img{
 .skills__icon{
 	font-size: 2rem;
 	margin-right: var(--mb-2);
-	color: var(--first-color);
+	background-color: black;
+	color: white;
 }
 .skills__names{
 	display: flex;
@@ -416,6 +421,7 @@ img{
 
 	.nav{
 		height: calc(var(--header-height) + 1rem);
+		
 	}
 	.nav__list{
 		display: flex;
