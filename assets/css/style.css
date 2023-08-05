@@ -8,8 +8,9 @@
 
 /*===== Colores =====*/
 :root{
-	--first-color: #4070F4;
-	--second-color: #0E2431;
+	--first-color: #032ea6;
+	--second-color: #ffffff;
+
 }
 
 /*===== Fuente y tipografia =====*/
@@ -27,7 +28,7 @@
 	}
 }
 
-/*===== Margenes =====*/
+/*=====Margenes=====*/
 :root{
 	--mb-1: 0.5rem;
 	--mb-2: 1rem;
@@ -56,7 +57,7 @@ body{
 	margin: var(--header-height) 0 0 0;
 	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
-	color: var(--second-color);
+
 }
 h1,h2,p{
 	margin: 0;
@@ -98,6 +99,7 @@ img{
 .section{
 	padding-top: 3rem;
 	padding-bottom: 2rem;
+
 }
 
 /*===== LAYOUT =====*/
@@ -116,8 +118,8 @@ img{
 	top: 0;
 	left: 0;
 	z-index: var(--z-fixed);
-	background-color: #fff;
-	box-shadow: 0 1px 4px rgba(146,161,176,.15);
+	background-color: #42a1ef;
+	box-shadow: 0 1px 4px rgba(243, 9, 32, 0.94);
 }
 
 /*===== NAV =====*/
@@ -127,6 +129,7 @@ img{
 	justify-content: space-between;
 	align-items: center;
 	font-weight: var(--font-semi);
+
 }
 @media screen and (max-width: 768px){
 	.nav__menu{
@@ -145,7 +148,7 @@ img{
 }
 .nav__link{
 	position: relative;
-	color: #fff;
+	color: #ffffff;
 }
 .nav__link:hover{
 	position: relative;
@@ -157,7 +160,7 @@ img{
 	height: 0.18rem;
 	left: 0;
 	top: 2rem;
-	background-color: var(--first-color);
+	background-color: #ffffff;
 }
 .nav__logo{
 	color: var(--second-color);
@@ -191,8 +194,7 @@ img{
 	row-gap: 1rem;
 }
 .home__data{
-	align-self: center;
-
+	align-self:center;
 }
 
 .home__title{
@@ -209,28 +211,6 @@ img{
 	margin-left: 6rem;
 }
 
-.typeEffect{
-	font-family: "arial";
-	font-size:24px;
-	display: inline-block;
-	width: 24px;
-}
-.typed{
-	overflow:hidden;
-	white-space: nowrap;
-	border-right: 2px solid;
-	width:0;
-	animation:typing 1.5s steps(30,end) forwards, blinkking 1s infinite;
-	}
-@keyframes typing {
-	from{width:0}
-	to{width:100%}
-}
-@keyframes blinking {
-	0%{border-color: transparent}
-	50%{border-color: black}
-	100%{border-color:transparent}
-}
 #companyTxt{
 	text-align:left;
 }
@@ -269,8 +249,8 @@ img{
 
 /* ===== ABOUT =====*/
 .about__container{
-	background-color: #3956a5;
-	color: #fff;
+	/*background-color: #3956a5;*/
+	/*color: #fff;*/
 	row-gap: 2rem;
 	text-align: center;
 }
@@ -349,7 +329,7 @@ img{
 	row-gap: 2rem;
 }
 .work__img{
-	box-shadow: 0 4px 25px rgba(14,36,49,.15);
+	box-shadow: 3px 4px 25px rgba(14,36,49,.15);
 	border-radius: .5rem;
 	overflow: hidden;
 }
@@ -463,11 +443,12 @@ img{
 
 	.about__container, .skills__container{
 		grid-template-columns: repeat(2,1fr);
-		align-items: center;
+		align-items: flex-start !important;
 		text-align: initial;
 	}
 	.about__img img{
 		width: 300px;
+		border-radius: 50px;
 	}
 	.work__container{
 		grid-template-columns: repeat(3, 1fr);
