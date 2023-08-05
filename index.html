@@ -6,11 +6,12 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- =====BOX ICONS===== -->
-	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'/>
 
 	<title>Amigo Group - Providing Industry Leading Solutions</title>
+	<link rel="icon" type="image/" href="assets/img/Logo.jpg" style="border-radius: 50%"/>
 </head>
-<body>
+<body style=" background-color:#2664F5">
 <!--===== HEADER =====-->
 <header class="l-header">
 	<nav class="nav bd-grid">
@@ -40,9 +41,9 @@
 		<div class="home__data">
 			<h1 class="home__title"><span class="home__title-color">Amigo</span>Groups</h1>
 			<h4 class="slogan">Precision in time, Delivering Excellence</h4>
-		</div>
 		<div class="home__img">
 			<img src="assets/img/Logo.jpg" alt="Amigo">
+		</div>
 		</div>
 	</section>
 
@@ -65,7 +66,7 @@
 		</div>
 	</section>
 
-	<!--===== SKILLS =====-->
+	<!--===== TECHNOLOGY =====-->
 	<!--<section class="skills section" id="skills"><h2 class="section-title">Technology</h2>-->
 
 		<section class="skills section" id="skills">
@@ -73,10 +74,7 @@
 
 			<div class="work__container bd-grid">
 				<div class="work__img">
-					<img src="assets/img/html5.png" alt="HTML5">
-				</div>
-				<div class="work__img">
-					<img src="assets/img/css3.png" alt="CSS3">
+					<img src="assets/img/htmlcss.png" alt="HTML5/CSS3">
 				</div>
 				<div class="work__img">
 					<img src="assets/img/js.png" alt="E-JAvaScript">
@@ -125,13 +123,12 @@
 	<!--===== CONTACT =====-->
 	<section class="contact section" id="contact">
 		<h2 class="section-title">Contact</h2>
-
 		<div class="contact__container bd-grid">
-			<form action="" class="contact__form">
-				<input type="text" placeholder="Name" class="contact__input">
-				<input type="mail" placeholder="Email" class="contact__input">
-				<textarea name="" id="" cols="0" rows="10"type="text" class="contact__input"></textarea>
-				<input type="button" value="Submit" class="contact__button button">
+			<form name="myForm" action="/action_page.php" method="post" target="_self" onsubmit="return validateForm()" class="contact__form">
+				<input type="text" placeholder="Name" name="name" required class="contact__input">
+				<input type="mail" placeholder="Email" name="email" required class="contact__input">
+				<textarea name="message" required cols="0" rows="10"type="text" class="contact__input"></textarea>
+				<button type="button" onclick="alert('Form Submitted!')" class="contact__button button">Submit</button>
 			</form>
 		</div>
 	</section>
@@ -139,7 +136,6 @@
 
 <!--===== FOOTER =====-->
 <footer class="footer">
-	<!--<p class="footer__title">Anil Chaudhary</p>-->
 	<div class="footer__social">
 		<a href="https://www.facebook.com/profile.php?id=100094741429161&mibextid=ZbWKwL" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
 		<a href="https://www.linkedin.com/company/amigo-group-nepal12" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
@@ -147,7 +143,7 @@
 		
 
 	</div>
-	<p>&#169; 2023 Amigo Groups</p>
+	<p style="font-family: cursive">&#169; 2023 Amigo Groups</p>
 </footer>
 
 
